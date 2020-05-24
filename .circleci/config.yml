@@ -8,6 +8,6 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t caraccccccccc/around .
-          docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
-          docker push caraccccccccc/around
+          sudo docker build -t caraccccccccc/around .
+          sudo docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
+          sudo docker push caraccccccccc/around
