@@ -3,12 +3,12 @@ jobs:
   build:
     docker:
       - image: circleci/golang:1.9
-    working_directory: /go/src/github.com/laioffer/Around
+    working_directory: /go/src/github.com/caraccliu/Around
     steps:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t [your-docker-user]/around .
+          docker build -t caraccccccccc/around .
           docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
-          docker push [your-docker-user]/around
+          docker push caraccccccccc/around
 
